@@ -26,7 +26,6 @@ class MenuController extends Controller
 
         if (!$menu) {
             return response()->json([
-<<<<<<< HEAD
                 'success' => false,
                 'message' => 'Menu tidak ditemukan',
             ], 404);
@@ -70,39 +69,12 @@ class MenuController extends Controller
     }
 
     // PUT/PATCH /api/menu/{id} — Update menu
-=======
-                'message' => 'Menu tidak ditemukan'
-            ], 404);
-        }
-
-        return response()->json($menu);
-    }
-
-    // POST /api/menus
-    public function store(Request $request)
-    {
-        $menu = Menu::create([
-            'nama_menu' => $request->nama_menu,
-            'harga' => $request->harga,
-            'deskripsi' => $request->deskripsi,
-            'gambar' => $request->gambar
-        ]);
-
-        return response()->json([
-            'message' => 'Menu berhasil ditambahkan',
-            'data' => $menu
-        ], 201);
-    }
-
-    // PUT/PATCH /api/menus/{id}
->>>>>>> oza
     public function update(Request $request, $id)
     {
         $menu = Menu::find($id);
 
         if (!$menu) {
             return response()->json([
-<<<<<<< HEAD
                 'success' => false,
                 'message' => 'Menu tidak ditemukan',
             ], 404);
@@ -136,33 +108,12 @@ class MenuController extends Controller
     }
 
     // DELETE /api/menu/{id} — Hapus menu
-=======
-                'message' => 'Menu tidak ditemukan'
-            ], 404);
-        }
-
-        $menu->update([
-            'nama_menu' => $request->nama_menu,
-            'harga' => $request->harga,
-            'deskripsi' => $request->deskripsi,
-            'gambar' => $request->gambar
-        ]);
-
-        return response()->json([
-            'message' => 'Menu berhasil diupdate',
-            'data' => $menu
-        ]);
-    }
-
-    // DELETE /api/menus/{id}
->>>>>>> oza
     public function destroy($id)
     {
         $menu = Menu::find($id);
 
         if (!$menu) {
             return response()->json([
-<<<<<<< HEAD
                 'success' => false,
                 'message' => 'Menu tidak ditemukan',
             ], 404);
@@ -181,16 +132,3 @@ class MenuController extends Controller
         ]);
     }
 }
-=======
-                'message' => 'Menu tidak ditemukan'
-            ], 404);
-        }
-
-        $menu->delete();
-
-        return response()->json([
-            'message' => 'Menu berhasil dihapus'
-        ]);
-    }
-}
->>>>>>> oza
