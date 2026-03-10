@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login — SiMeRa</title>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Lora:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:wght@600&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Sora', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background: #1C1A17;
             min-height: 100vh;
             display: flex;
@@ -32,9 +32,11 @@
             margin-bottom: 40px;
         }
         .login-logo__icon {
-            font-size: 44px;
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
             display: block;
-            margin-bottom: 14px;
+            margin: 0 auto 14px;
         }
         .login-logo__title {
             font-family: 'Lora', serif;
@@ -76,7 +78,7 @@
             background: rgba(255,255,255,0.06);
             border: 1px solid rgba(255,255,255,0.10);
             border-radius: 10px;
-            font-family: 'Sora', sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-size: 14px;
             color: #fff;
             outline: none;
@@ -99,7 +101,7 @@
             border: none;
             border-radius: 10px;
             color: #fff;
-            font-family: 'Sora', sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-size: 15px;
             font-weight: 600;
             cursor: pointer;
@@ -115,7 +117,7 @@
 <div class="login-box">
 
     <div class="login-logo">
-        <span class="login-logo__icon">🍽️</span>
+        <img src="{{ asset('images/logo.png') }}" alt="Logo SiMeRa" class="login-logo__icon">
         <div class="login-logo__title">SiMeRa</div>
         <div class="login-logo__tagline">Sistem Manajemen Menu Restoran</div>
     </div>
