@@ -27,7 +27,7 @@
             display: flex;
         }
 
-        /* ===== SIDEBAR ===== */
+        /* Sidebar */
         .sidebar {
             width: 220px;
             background: var(--sidebar);
@@ -101,7 +101,7 @@
         }
         .sb-user__logout:hover { color: #C94F2C; }
 
-        /* ===== MAIN ===== */
+        /* MAIN */
         .main {
             margin-left: 220px;
             flex: 1;
@@ -293,7 +293,6 @@
 
         <!-- Greeting -->
         <div class="greeting">
-            <div class="greeting__deco">🍽️</div>
             <div class="greeting__eyebrow">Selamat Datang</div>
             <div class="greeting__title">
                 Halo, <span>Admin</span>!<br>
